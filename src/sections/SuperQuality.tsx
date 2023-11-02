@@ -27,7 +27,7 @@ const SuperQuality: React.FC = () => {
           <Button
             label="Shop now"
             iconURL={arrowRight}
-            animate="pulse"
+            animationName="bounce"
           />
         </div>
       </div>

@@ -34,7 +34,7 @@ const Hero: React.FC = () => {
         <Button
           label="Show now"
           iconURL={arrowRight}
-          animate="bounce"
+          animationName="pulse"
         />
         <div className="flex justify-start items-start flex-wrap w-full mt-20 gap-16">
           {statistics.map((stat) => (

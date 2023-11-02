@@ -21,7 +21,7 @@ const Subscribe: React.FC = () => {
           <Button
             label="Sign Up"
             fullWidth
-            animate="bounce"
+            animationName="bounce"
           />
         </div>
       </div>

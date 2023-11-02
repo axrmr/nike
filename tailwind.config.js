@@ -14,8 +14,6 @@ export default {
       '8xl': ['96px', '106px'],
     },
     extend: {
-      keyframes: {},
-      animation: {},
       fontFamily: {
         palanquin: ['Palanquin', 'sans-serif'],
         montserrat: ['Montserrat', 'sans-serif'],
