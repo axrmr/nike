@@ -13,7 +13,7 @@ const Nav: React.FC = () => {
 
   return (
     <header className='absolute w-full padding-x py-8 z-10'>
-      <nav className='flex justify-between items-center max-container'>
+      <nav className='flex justify-between items-center max-container 0'>
         <a href='/'>
           <img
             src={headerLogo}
@@ -22,7 +22,8 @@ const Nav: React.FC = () => {
           />
         </a>
         <ul
-          className={`flex flex-1 items-center justify-center max-lg:fixed inset-0 max-lg:back-ground max-lg:transition-transform bg-gradient-to-r from-coral-red to-coral-red backdrop-blur-3xl ${
+          className={`flex flex-1 items-center justify-center max-lg:fixed inset-0 max-lg:back-ground max-lg:transition-transform bg-gradient-to-r from-coral-red to-coral-red backdrop-blur-3xl 
+          ${
             isMenuVisible
               ? 'translate-x-[0rem] no-scroll'
               : 'translate-x-[100%]'
@@ -30,6 +31,7 @@ const Nav: React.FC = () => {
         } max-lg:flex-col gap-16
 
           `}
+          onClick={handleMenuClick}
         >
           {navLinks.map((item) => (
             <li key={item.label}>
@@ -43,9 +45,9 @@ const Nav: React.FC = () => {
             </li>
           ))}
         </ul>
-        <div className='relative z-10 lg:hidden'>
+        <div>
           <img
-            className='cursor-pointer'
+            className='fixed top-8 right-8 cursor-pointer hover:fill-slate-50 animate-bounce'
             src={isMenuVisible ? close : hamburger}
             alt='Hamburger'
             width={25}
