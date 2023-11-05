@@ -13,9 +13,7 @@
 }
 
 body:has(.no-scroll) {
-  @media (max-width: 1023px) {
-    overflow: hidden;
-  }
+  overflow: hidden;
 }
 
 @layer components {
